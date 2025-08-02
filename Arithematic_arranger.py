@@ -1,6 +1,6 @@
 #Arranging the numbers in line by line and doing arithmetic operations on them
 def arithmetic_arranger(problems, display_answers=False):
-    # your full working code
+    # here is the logics we used in the code
     if len(problems) > 5:
         return "Error : Too many problems"
     first_line=""
@@ -52,4 +52,5 @@ def arithmetic_arranger(problems, display_answers=False):
 
 
 problems=["49 + 498","63 - 679"]
+
 print(arithmetic_arranger(problems,True))
