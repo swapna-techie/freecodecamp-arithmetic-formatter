@@ -15,13 +15,13 @@ def arithmetic_arranger(problems, display_answers=False):
 
         left, operator, right=parts
         if operator not in ['+','-']:
-            return "Error :Operator must be '+',or '-'."
+            return "Error :Operator must be '+',or '-'"
 
         if not left.isdigit() or not right.isdigit(): #"isdigit" checks if the string contains only digits(0-9)
-             return "Error : Numbers must only contain digits."
+             return "Error : Numbers must only contain digits"
 
         if len(left)>4 or len(right)>4:
-            return "Error : Number cannot be more than four digits."
+            return "Error : Number cannot be more than four digits"
 
         #now here we should arrange them in correct format
         width=max(len(left),len(right))+2
@@ -54,3 +54,4 @@ def arithmetic_arranger(problems, display_answers=False):
 problems=["49 + 498","63 - 679"]
 
 print(arithmetic_arranger(problems,True))
+
